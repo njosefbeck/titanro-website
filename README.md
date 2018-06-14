@@ -1,4 +1,4 @@
-#titanro-website
+# titanro-website
 
 Took what was currently up at http://titanro.net and re-wrote both the HTML and the CSS. This ensured that the website would look good on all devices. Along the way made some design decisions for mobile and tablet that can be modified / discarded.
 
