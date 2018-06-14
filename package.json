@@ -1,0 +1,23 @@
+{
+  "name": "titanro-website",
+  "version": "1.0.0",
+  "description": "Responsive version of titanro.net website",
+  "main": "index.html",
+  "scripts": {
+    "concat:css": "concat -o ./style/style.together.css ./style/reset.css ./style/framework.css",
+    "prefix:css": "autoprefixer-cli -o ./style/style.prefixed.css ./style/style.together.css",
+    "min:css": "cleancss -o ./style/style.min.css ./style/style.prefixed.css",
+    "style": "npm run concat:css && npm run prefix:css && npm run min:css"
+  },
+  "keywords": [
+    "TitanRO",
+    "Ragnarok Online"
+  ],
+  "author": "Nathan Beck <njosefbeck@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "clean-css-cli": "^4.1.11",
+    "concat": "^1.0.3"
+  }
+}
